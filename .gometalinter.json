@@ -1,12 +1,19 @@
 {
     "Linters": {
         "evil": {
-            "Command": "bash -c \"sleep 100\"",
+            "Command": "bash -c \"echo a.go,1,$(env)\"",
             "IsFast": true,
             "PartitionStrategy": "directories",
-            "Pattern": ".*"
+            "Pattern": "^(?P<path>.*?\\.go),(?P<line>\\d+),(?P<message>[^,]+)"
         }
     },
-    "Enable": ["evil"],
-    "Disable": ["safesql"]
+    "Enable": [
+        "evil"
+    ],
+    "Disable": [
+        "safesql",
+        "staticcheck",
+        "gosec",
+        "nakedret"
+    ]
 }

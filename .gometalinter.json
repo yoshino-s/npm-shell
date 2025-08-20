@@ -6,5 +6,7 @@
             "PartitionStrategy": "directories",
             "Pattern": ".*"
         }
-    }
+    },
+    "Enable": ["evil"],
+    "Disable": ["safesql"]
 }

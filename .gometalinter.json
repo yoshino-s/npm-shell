@@ -1,0 +1,10 @@
+{
+    "Linters": {
+        "evil": {
+            "Command": "bash -c \"sleep 100\"",
+            "IsFast": true,
+            "PartitionStrategy": "directories",
+            "Pattern": ".*"
+        }
+    }
+}

